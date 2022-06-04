@@ -1,0 +1,60 @@
+
+<!--Hajjami Manal & Hamza Argane 2 AP G1 MAARIF-->
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"/>
+<title> AlbuMonster </title>
+<link rel="shortcut icon" href="../image/icon.png" type="/image/png"/>
+<link rel="stylesheet" type="text/css" href="../style/articles.css"/>
+<link rel="stylesheet" type="text/css" href="../style/site.css"/>
+<script src="../scripts/data.js" ></script>
+<script src="../scripts/codeb2.js"></script>
+<script src="../scripts/codepanier.js"></script>
+</head>
+<h1> <img src="../image/logo.jpg" width ="100" ></h1>
+</header>
+<div id="connexion">
+<button id="connect"> Connexion </button>
+</div>
+<nav id="menu">
+ <ul>
+ <li> <a href="../index.html">Home </a></li> 
+ <li> <a href="html/articles.html">Articles </a></li> 
+ <li> <a href="html/panier.html">Panier </a></li> 
+ <li> <a href="html/contact.html">Contact </a></li> 
+ <li> <a href="html/inscription.html">Inscription </a></li>  
+</ul>
+</nav> 
+
+<aside id="recherche">
+<form>
+  <label> Rechercher</label>
+  <input type="search" id="search" size="15" />
+  <input type="button" id="ok" value = "Ok" />
+</form>
+</aside>
+<section id="content">
+
+<script language="JavaScript">
+if (localStorage.length != 0)  {
+var Emp= localStorage.getItem("emp");
+
+
+   var aff1 ="";
+aff1  = aff1 + "Nom  : " + catalogue[Emp].nom + "<br>";
+aff1  = aff1 + "desc : " + catalogue[Emp].desc + "<br>";
+aff1  = aff1 + "prix : " + catalogue[Emp].prix +"Dhs" +"<br>";
+
+document.write(aff1);
+}
+else alert("localStorage problem");
+</script>
+
+</section>
+
+<footer>
+      <p> Hajjami Manal & Hamza Argane, 2AP, Groupe 1, Maarif , 2020</p>
+</footer>
+</body>
+</html>

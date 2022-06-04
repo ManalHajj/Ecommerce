@@ -1,0 +1,82 @@
+﻿<!--Hajjami Manal & Hamza Argane 2 AP G1 MAARIF-->
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"/>
+<title> Contactez-nous </title>
+<link rel="shortcut icon" href="../image/icon.png" type="/image/png"/>
+<link rel="stylesheet" type="text/css" href="../style/site.css"/>
+</head>
+<body>
+<header>
+<h1> <img src="../image/logo.jpg" width ="100" ></h1>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+</header>
+<div id="connexion">
+<button id="connect"> Connexion </button>
+</div>
+<nav id="menu">
+ <ul>
+ <li> <a href="../index.html"> Home </a></li> 
+ <li> <a href="articles.html">Articles </a></li> 
+ <li> <a href="panier.html">Panier </a></li> 
+ <li> <a href="contact.html">Contact </a></li> 
+ <li> <a href="inscription.html">Inscription </a></li> 
+</ul>
+</nav> 
+<aside id="recherche">
+<form>
+  <label> Rechercher</label>
+  <input type="search" id="search" size="15" />
+  <input type="button" value = "Ok" />
+</form>
+</aside>
+<p> Tel : 0670707711 <br/> Email: AlbuMonster@gmail.com </p>
+<section id ="content">
+    <form method="post"  id="contact">
+  <fieldset>
+  <legend> Contactez-nous</legend>
+<ul>
+    <li>
+    <label>Nom et prénom 
+    <input type="text"  id="prenom" placeholder="Prénom"  required/> 
+	<input type="text"  id="nom" placeholder="Nom"  required/>
+	</li>
+    <li>
+        <label>Email</label>
+        <input type="email" id="email" required />
+    </li>
+    <li>
+        <label>votre Message</label>
+        <textarea  id="msg" rows ="5" cols= "20"> </textarea>
+    </li>
+    <li>
+        <input type="submit" value="Envoyer" />
+    </li>
+</ul>
+</fieldset>
+</form>
+
+<script> 
+
+var myForm = document.getElementById("contact");
+myForm.onsubmit = function envoyercourriel()  {
+var url='mailto:manalhamzaprojects@gmail.com'+"nom :"+encodeURIComponent(document.getElementById("nom").value)
+ +"prenom :"+encodeURIComponent(document.getElementById("prenom").value)
+  +"message : "+encodeURIComponent(document.getElementById("msg").value);
+        <!--Ouvrir client messagerie-->
+        window.location.href=url;}
+</script>
+
+</section>
+<footer>
+  <p>Manal Hajjami & Hamza Argane, 2AP, G1, Maarif, 2020</p>
+</footer>
+
+</body>
+</html>
+
+
+
+

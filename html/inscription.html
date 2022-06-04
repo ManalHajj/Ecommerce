@@ -1,0 +1,90 @@
+﻿<!--Hajjami Manal & Hamza Argane 2 AP G1 MAARIF-->
+
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"/>
+<title> Inscrivez-vous </title>
+<link rel="shortcut icon" href="../image/icon.png" type="/image/png"/>
+<link rel="stylesheet" type="text/css" href="../style/site.css"/>
+</head>
+<body>
+<header>
+<h1><img src="../image/logo.jpg" width ="100" > </h1>
+</header>
+<div id="connexion">
+<button id="connect"> Connexion </button>
+</div>
+<nav id="menu">
+ <ul>
+ <li> <a href="../index.html"> Home </a></li> 
+ <li> <a href="articles.html">Articles </a></li> 
+ <li> <a href="panier.html">Panier </a></li> 
+ <li> <a href="contact.html">Contact </a></li> 
+ <li> <a href="inscription.html">Inscription </a></li> 
+</ul>
+</nav> 
+<section id ="content">
+ <form  id="inscription" method="post" action="compte.html"> 
+	<fieldset>
+	<legend> 1 </legend>
+	<label for="nom"> Nom 
+	<input type="text" name="nom" id="nom" /></label>
+	<label for="prenom"> Prénom 
+	<input type="text" name="prenom" id="prenom" /></label>
+	</fieldset>
+	<fieldset>
+	<legend>  2 Email et téléphone </legend>
+	<label for="email"> Email 
+	<input type="email" name="email" id="email" /> </label>
+	<label for="tel"> Tél 
+	<input type="tel" name="tel" id="tel" /> </label>
+	</fieldset>
+	<fieldset>
+     <legend> 3 Mot de Passe </legend>	
+	<label for="pwd"> Mot de passe 
+	<input type="password" name="pwd" id="pwd" /> </label>
+	<label for="pwd"> Confirmez le mot de passe 
+	<input type="password" name="pwdcopy" id="pwdcopy" /></label>
+	</fieldset>
+	<fieldset>
+	<input type="submit" value="Inscription" id="btnIns"/>
+	</fieldset>
+	</form> 
+</section>
+<aside id="recherche">
+<form>
+  <label> Rechercher</label>
+  <input type="search" id="search" size="15" />
+  <input type="button" value = "Ok" />
+</form>
+</aside>
+
+<script>
+		
+var myForm = document.getElementById("inscription");
+ myForm.onsubmit = function(){
+var nom = document.getElementById("nom").value;
+localStorage.setItem("nom",nom);
+var prenom = document.getElementById("prenom").value;					
+localStorage.setItem("prenom",prenom);
+var email = document.getElementById("email").value;
+localStorage.setItem("email",email);
+var tel = document.getElementById("tel").value;
+localStorage.setItem("tel",tel);
+var pwd = document.getElementById("pwd").value;
+localStorage.setItem("pwd",pwd);
+var pwdcopy = document.getElementById("pwdcopy").value;
+localStorage.setItem("pwdcopy",pwdcopy);
+}
+</script>
+
+<footer>
+    <p>Manal Hajjami & Hamza Argane, 2AP, n°groupe, Local, 2020</p>
+</footer>
+
+</body>
+</html>
+
+
+
