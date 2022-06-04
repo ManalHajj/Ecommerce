@@ -1,0 +1,74 @@
+/*Hajjami Manal & Hamza Argane 2 AP G1 MAARIF*/
+
+#content
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.img_art
+{  
+   width: 200px;
+    height: 200px;
+    margin-left: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 3px white;
+ 
+  
+}
+
+.nom_art
+{ 
+ font-family: Gill Sans, sans-serif;
+ font-size: 100%; 
+ color: white;
+ text-shadow: black 0.1em 0.1em 0.2em;
+}
+.desc_art
+{
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+    place-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.prix_art{
+    z-index:10;	
+    color: black;
+    text-shadow: black 0.1em 0.4em 0.2em;
+    font-size:24px;
+    font-weight: bold;
+    text-align:center;
+ 
+
+
+
+}
+.prix_artan{
+    z-index:10;	
+    color: #E02020;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size:17px;
+    text-decoration : line-through;
+    text-align:center;
+}
+
+
+.btn_art{
+        width : 25px;
+	height : 25px;
+	background-size : cover;
+	border : solid 1px white;
+	background-image : url(	../image/cmd.jpg);
+	vertical-align : top;
+}
+.cmd_art {
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    place-content: flex-start;
+    align-items: flex-start;
+    
+}

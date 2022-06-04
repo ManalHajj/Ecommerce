@@ -1,0 +1,21 @@
+/*Hajjami Manal & Hamza Argane 2 AP G1 MAARIF*/
+
+#monpanier{
+
+}
+#montant{
+	
+}
+.imgpoubelle
+{
+	width: 30px;
+    height: 30px;
+    border-style: outline;
+    box-shadow: 0 0 3px 5px Black;
+    margin-right: 50px;
+}
+td{
+	color: black;
+	text-shadow: white 0.1em 0.1em 0.2em;
+	font-size: 150%;
+}
